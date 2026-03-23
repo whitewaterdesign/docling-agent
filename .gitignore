@@ -1,18 +1,4 @@
-# Python-generated files
-__pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-**/.venv
-
-# Environment variables
-.env
-
-# IDE
-.idea/
+**/node_modules
 .claude/
+.idea/
+**/__pycache__/
