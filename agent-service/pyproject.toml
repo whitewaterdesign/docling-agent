@@ -1,0 +1,14 @@
+[project]
+name = "agent-service"
+version = "0.1.0"
+description = "Agno agent service for document conversion"
+requires-python = ">=3.13"
+dependencies = [
+    "agno>=2.5.10",
+    "ag-ui-protocol",
+    "openai>=1.0.0",
+    "document-converter",
+]
+
+[tool.uv.sources]
+document-converter = { path = ".." }
