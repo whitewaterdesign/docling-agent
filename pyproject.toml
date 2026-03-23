@@ -9,5 +9,7 @@ dependencies = [
     "docling>=2.80.0",
     "openai>=2.29.0",
     "pydantic-settings>=2.13.1",
+    "pytest>=9.0.2",
+    "pytest-coverage>=0.0",
     "python-dotenv>=1.2.2",
 ]

@@ -5,10 +5,11 @@ from docling.document_converter import DocumentConverter
 
 
 class DocumentService:
-    def __init__(self):
-        self.converter = DocumentConverter()
+    def __init__(self, converter: DocumentConverter):
+        self.converter = converter
 
-    def _create_stream(self, name: str, stream: BytesIO) -> DocumentStream:
+    @staticmethod
+    def _create_stream(name: str, stream: BytesIO) -> DocumentStream:
         return DocumentStream(name=name, stream=stream)
 
     def convert_to_md(self, name: str, stream: BytesIO) -> str:
